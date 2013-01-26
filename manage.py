@@ -3,7 +3,9 @@ import os
 import sys
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "{{ project_name }}.settings")
+    # This is disabled to avoid launching with wrong settings file
+    # "Explicit is better than implicit"
+    # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "{{ project_name }}.settings")
 
     from django.core.management import execute_from_command_line
 
