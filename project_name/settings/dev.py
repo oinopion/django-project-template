@@ -8,7 +8,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 # local development uses local postgres db
-DATABASE_URL = 'postgres://localhost/{{ project_name }}'
+DATABASE_URL = 'postgres:///{{ project_name }}'
 
 DATABASES = {
         'default': dj_database_url.config(default=DATABASE_URL)
